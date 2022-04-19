@@ -291,7 +291,7 @@ class OptionsMenu extends MusicBeatState
 						checkBoxesArray[curSelected].set_daValue(currentSelectedCat.getOptions()[curSelected].getAccept());
 						//updateCheckboxes();
 					}
-
+                                    }
 		if (curSelected < 0)
 			curSelected = page.length - 1;
 
