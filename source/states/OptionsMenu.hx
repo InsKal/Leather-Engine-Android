@@ -276,7 +276,21 @@ class OptionsMenu extends MusicBeatState
 			if(controls.BACK)
 				inMenu = false;
 		}
-
+          if (controls.ACCEPT)
+			{
+				
+				if (isCat)
+				{
+					if (currentSelectedCat.getOptions()[curSelected].press(true))
+					{
+						grpControls.remove(grpControls.members[curSelected]);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, currentSelectedCat.getOptions()[curSelected].getDisplay(), currentSelectedCat.getOptions()[curSelected].boldDisplay, false);
+						grpControls.add(ctrl);
+						ctrl.isMenuItem = true;
+						checkBoxesArray[curSelected].sprTracker = grpControls.members[curSelected];
+						checkBoxesArray[curSelected].set_daValue(currentSelectedCat.getOptions()[curSelected].getAccept());
+						//updateCheckboxes();
+					}
 
 		if (curSelected < 0)
 			curSelected = page.length - 1;
