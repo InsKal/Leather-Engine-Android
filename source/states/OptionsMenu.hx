@@ -277,7 +277,7 @@ class OptionsMenu extends MusicBeatState
 				inMenu = false;
 		}
           if (controls.ACCEPT)
-			{
+               {
 		       selectOption();
 		    }
 		   if (controls.ACCEPT && !selectedOptionsGameplay)
