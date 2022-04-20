@@ -283,7 +283,7 @@ class OptionsMenu extends MusicBeatState
 		    }
                
 		   if (controls.ACCEPT && !selectedOptionsGameplay)
-		}
+	        {
 		  FlxG.switchpage(new Gameplay());
 		}
 
